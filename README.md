@@ -1,6 +1,6 @@
 # 💧 Sentinela_SP - Sistema de Monitoramento e Alerta de Inundação
 
-## [Teste do protótipo](./teste_do_prototipo_sentinela_SP.mp4)
+## ⏯️ [Teste do protótipo](https://drive.google.com/file/d/1Vu5SGe8t5NlpKHBG-QmpVpiC-CKRoaDC/view?usp=sharing)
 
 ## 📋 Descrição do Sistema
 
