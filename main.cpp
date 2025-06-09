@@ -3,8 +3,8 @@
 #include <ArduinoJson.h>    // Para formatação JSON
 
 // --- Configurações de WiFi ---
-const char* WIFI_SSID = "SeuSSID"; // Substitua pelo SSID da sua rede WiFi
-const char* WIFI_SENHA = "SuaSenha"; // Substitua pela senha da sua rede WiFi
+const char* WIFI_SSID = "sua_rede_wifi"; // Substitua pelo nome da sua rede WiFi
+const char* WIFI_SENHA = "sua_senha_wifi"; // Substitua pela senha da sua rede WiFi
 
 // --- Configurações do Servidor Web ---
 WebServer server(80);
@@ -27,8 +27,8 @@ enum EstadoNivelAgua {
 };
 
 // --- Limites do Sensor de Água ---
-const int NIVEL_NORMAL_MAX = 1500;
-const int NIVEL_PERIGO_MAX = 2500;
+const int NIVEL_NORMAL_MAX = 1000;
+const int NIVEL_PERIGO_MAX = 2000;
 
 // Centraliza o estado atual do sensor para que todas as funções usem o mesmo dado.
 // 'volatile' informa ao compilador que a variável pode mudar a qualquer momento.
@@ -37,7 +37,7 @@ volatile EstadoNivelAgua g_estadoAguaAtual = SECO;
 
 // --- Intervalos de Tempo ---
 unsigned long proximoTempoLeitura = 0;
-const long INTERVALO_LEITURA_SENSOR = 5000; // 5 segundos
+const long INTERVALO_LEITURA_SENSOR = 1000; // 5 segundos
 unsigned long proximoTempoReconexaoWifi = 0;
 const long INTERVALO_RECONEXAO_WIFI = 10000; // 10 segundos
 
